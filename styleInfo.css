@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+#info {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.img-container {
+    width: 20%;
+    margin-bottom: 10px;
+    margin-left: 500px;
+}
+
+.cnt2 {
+    margin-right: 700px;
+}
+
+.immg {
+    width: 40%;
+    height: auto;
+    margin-left: 700px;
+}
+
+.info-container {
+    width: 60%;
+    margin-right: 10000px;
+}
+
+h3 {
+    color: #fff;
+}
+
+.immg {
+    border: solid white 3px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-container {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px white;
+}
+
+.info-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 40px 30px white;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(120deg, blueviolet, #0eabc7);
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.info-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+@media (max-width: 768px) {
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .info-container {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 350px;
+    }
+
+    .img-container {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        margin-right: 1000px;
+    }
+
+    .immg {
+        width: 100%;
+        height: auto;
+        margin-right: 200px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .button-container {
+        margin: 0 auto;
+    }
+}
